@@ -1,0 +1,99 @@
+body{font-family: 'Montserrat', sans-serif;}
+header {
+    width: 100%;
+    .homePage {
+        width: 100%;
+        height: 524px;
+        background: linear-gradient(to right, #677CE7,#754FA7);
+        nav {
+            height: 100px;
+            width: 100%;
+            position: fixed;
+            background: linear-gradient(to right, #677CE7,#754FA7);
+            .menu-hamburger {
+                width: 35px;
+                height: 30px; 
+                flex-flow: column wrap;
+                justify-content: space-around;
+                align-items: center;
+                margin-left: 5%;
+                transition: .25s;
+                position: absolute;
+                z-index: 3;
+                top: 50%;
+                transform: translateY(-50%);
+                display: none;
+                div{
+                    width: 75%;
+                    border: 1px solid white;
+                    transition: .25s;
+                }
+            }
+            .navbar {
+                list-style-type: none;
+                display: flex;
+                height: 100%;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 600px;
+                margin-left: 5%;
+                .menu {
+                    width: 75%;
+                    div{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 90%;
+                    margin-left: 60px;
+                    li {
+                        a{
+                            text-decoration-style: none;
+                            text-decoration-line: none;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 100;
+                            font-size: 19px;
+                            letter-spacing: 1px;
+                            transition: .2s;
+                            color: #ffffff;
+                            &:hover {
+                                color: lightgray;
+                                cursor: pointer;
+                            }
+                            &:active {
+                                color:#ffffff
+                                
+                            }   
+                        }
+                    }
+                }
+            }
+                .nav-logo {
+                    a{
+                    text-decoration-style: none;
+                    text-decoration-line: none;
+                    font-size: 33px;
+                    color: white;
+                    font-family: 'Montserrat-Medium', sans-serif;
+                    letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+    }
+}
+.menu-hamburger-active {
+        .line-one{
+        position: absolute;
+        transform: rotate(45deg);
+        }
+        .line-two {
+            position: absolute;
+            transform: rotate(45deg);
+        }
+        .line-three {
+            position: absolute;
+            transform: rotate(-45deg);
+        }
+}
