@@ -1,0 +1,32 @@
+@media only screen and (max-width:675px) {
+.features {
+    height: 1100px;
+    .feature-wrapper {
+        width: 100%;
+        height: 100%;
+        h1 {
+            font-size: 30px;
+        }
+        ul {
+            flex-flow: column wrap;
+            justify-content: space-around;
+            li {
+                width: 100%;
+                height: auto;
+                img{
+                    width: 65%;
+                    height: 200px;
+                 }
+                div {
+                    h1 {
+                        font-size: 26px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+}

@@ -47,18 +47,18 @@ gulp.task('uglify', function (cb) {
 
 gulp.task('copyImg', function () {
     return gulp.src('src/assets/img/**/*.*')
-        .pipe(gulp.dest('./dist/img'))
+        .pipe(gulp.dest('./dist/img'));
 });
 
 gulp.task('copyFonts', function () {
     return gulp.src('src/assets/fonts/*.*')
-        .pipe(gulp.dest('./dist/fonts'))
+        .pipe(gulp.dest('./dist/fonts'));
 });
 
 gulp.task('copyLibs', function () {
     return gulp.src('src/assets/libs/*.*')
-        .pipe(gulp.dest('./dist/libs'))
-})
+        .pipe(gulp.dest('./dist/libs'));
+});
 
 gulp.task('watch', function () {
     gulp.watch('src/assets/sass/**/*.scss', ['sass']);

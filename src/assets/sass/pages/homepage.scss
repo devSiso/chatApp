@@ -5,9 +5,12 @@ header {
         width: 100%;
         height: 524px;
         background: linear-gradient(to right, #677CE7,#754FA7);
+        position: relative;
         nav {
-            height: 100px;
-            width: 100%;
+            height: 90px;
+            width: 100vw;
+            transition: .25s;
+            z-index: 2;
             position: fixed;
             background: linear-gradient(to right, #677CE7,#754FA7);
             .menu-hamburger {
@@ -51,8 +54,7 @@ header {
                         a{
                             text-decoration-style: none;
                             text-decoration-line: none;
-                            font-family: 'Montserrat', sans-serif;
-                            font-weight: 100;
+                            font-family: 'Montserrat-Light', sans-serif;
                             font-size: 19px;
                             letter-spacing: 1px;
                             transition: .2s;
@@ -81,6 +83,76 @@ header {
                 }
             }
         }
+        .text-box {
+                width: 640px;
+                height: 280px;
+                margin-left: 5%;
+                position: absolute;
+                top: 320px;
+                transform: translateY(-50%);
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-between;
+                align-items: flex-start;
+                h1 {
+                    font-family: 'Montserrat-Medium', sans-serif;
+                    letter-spacing: 1px;
+                    color: white;
+                    font-size: 36px;
+                    text-align: justify;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-family: 'Montserrat-Light', sans-serif;
+                    letter-spacing: 1px;
+                    color: white;
+                    font-size: 24px;
+                    text-align: justify;
+                }
+                div{
+                    width: 370px;
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        width: 172px;
+                        height: 60,32px;
+                        text-decoration-style: none;
+                        text-decoration-line: none;
+                        img{
+                            width: 172px;
+                            height: 60,32px;
+                        }
+                    }
+                }
+        }
+        .iphoneArea {
+            width: 425px;
+            height: 430px;
+            position: absolute;
+            bottom: 0;
+            right: 3%;
+            display: flex;
+            justify-content: center;
+            .backgroundIphone {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 132px;
+                background-image: url("../img/component.png");
+                background-size: cover;
+                background-position: center;
+            }
+            .iphone {
+                position: absolute;
+                bottom: 0;
+                height: 430px;
+                width: 282,38px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
     }
 }
 .menu-hamburger-active {
@@ -96,4 +168,7 @@ header {
             position: absolute;
             transform: rotate(-45deg);
         }
+}
+.navbarScrolled {
+    box-shadow: 0px 0px 15px 1px rgba(105, 56, 161, 0.897);
 }
