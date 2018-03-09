@@ -1,10 +1,13 @@
-body{font-family: 'Montserrat', sans-serif;}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
     width: 100%;
     .homePage {
         width: 100%;
         height: 524px;
-        background: linear-gradient(to right, #677CE7,#754FA7);
+        background: linear-gradient(to right, #677CE7, #754FA7);
         position: relative;
         nav {
             height: 90px;
@@ -12,10 +15,10 @@ header {
             transition: .25s;
             z-index: 2;
             position: fixed;
-            background: linear-gradient(to right, #677CE7,#754FA7);
+            background: linear-gradient(to right, #677CE7, #754FA7);
             .menu-hamburger {
                 width: 35px;
-                height: 30px; 
+                height: 30px;
                 flex-flow: column wrap;
                 justify-content: space-around;
                 align-items: center;
@@ -26,7 +29,7 @@ header {
                 top: 50%;
                 transform: translateY(-50%);
                 display: none;
-                div{
+                div {
                     width: 75%;
                     border: 1px solid white;
                     transition: .25s;
@@ -43,89 +46,95 @@ header {
                 margin-left: 5%;
                 .menu {
                     width: 75%;
-                    div{
-                    display: flex;
-                    flex-flow: row nowrap;
-                    justify-content: space-between;
-                    align-items: center;
-                    width: 90%;
-                    margin-left: 60px;
-                    li {
-                        a{
-                            text-decoration-style: none;
-                            text-decoration-line: none;
-                            font-family: 'Montserrat-Light', sans-serif;
-                            font-size: 19px;
-                            letter-spacing: 1px;
-                            transition: .2s;
-                            color: #ffffff;
-                            &:hover {
-                                color: lightgray;
-                                cursor: pointer;
+                    div {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 90%;
+                        margin-left: 60px;
+                        li {
+                            a {
+                                text-decoration-style: none;
+                                text-decoration-line: none;
+                                font-family: 'Montserrat-Light', sans-serif;
+                                font-size: 19px;
+                                letter-spacing: 1px;
+                                transition: .2s;
+                                color: #ffffff;
+                                &:hover {
+                                    color: lightgray;
+                                    cursor: pointer;
+                                }
+                                &:active {
+                                    color: #ffffff
+                                }
                             }
-                            &:active {
-                                color:#ffffff
-                                
-                            }   
                         }
                     }
                 }
-            }
                 .nav-logo {
-                    a{
-                    text-decoration-style: none;
-                    text-decoration-line: none;
-                    font-size: 33px;
-                    color: white;
-                    font-family: 'Montserrat-Medium', sans-serif;
-                    letter-spacing: 1px;
+                    a {
+                        text-decoration-style: none;
+                        text-decoration-line: none;
+                        font-size: 33px;
+                        color: white;
+                        font-family: 'Montserrat-Medium', sans-serif;
+                        letter-spacing: 1px;
                     }
                 }
             }
         }
         .text-box {
-                width: 640px;
-                height: 280px;
-                margin-left: 5%;
-                position: absolute;
-                top: 320px;
-                transform: translateY(-50%);
+            width: 640px;
+            height: 280px;
+            margin-left: 5%;
+            position: absolute;
+            top: 320px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            h1 {
+                font-family: 'Montserrat-Medium', sans-serif;
+                letter-spacing: 1px;
+                color: white;
+                font-size: 36px;
+                text-align: justify;
+                margin-bottom: 10px;
+            }
+            p {
+                font-family: 'Montserrat-Light', sans-serif;
+                letter-spacing: 1px;
+                color: white;
+                font-size: 24px;
+                text-align: justify;
+            }
+            div {
+                width: 370px;
                 display: flex;
-                flex-flow: column wrap;
                 justify-content: space-between;
-                align-items: flex-start;
-                h1 {
-                    font-family: 'Montserrat-Medium', sans-serif;
-                    letter-spacing: 1px;
-                    color: white;
-                    font-size: 36px;
-                    text-align: justify;
-                    margin-bottom: 10px;
-                }
-                p {
-                    font-family: 'Montserrat-Light', sans-serif;
-                    letter-spacing: 1px;
-                    color: white;
-                    font-size: 24px;
-                    text-align: justify;
-                }
-                div{
-                    width: 370px;
-                    display: flex;
-                    justify-content: space-between;
-                    a{
+                a {
+                    width: 172px;
+                    height: 60, 32px;
+                    text-decoration-style: none;
+                    text-decoration-line: none;
+                    img {
                         width: 172px;
-                        height: 60,32px;
-                        text-decoration-style: none;
-                        text-decoration-line: none;
-                        img{
-                            width: 172px;
-                            height: 60,32px;
-                        }
+                        height: 60, 32px;
                     }
                 }
+            }
         }
         .iphoneArea {
+            .entorno {
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                height: 100%;
+            }
             width: 425px;
             height: 430px;
             position: absolute;
@@ -146,8 +155,8 @@ header {
                 position: absolute;
                 bottom: 0;
                 height: 430px;
-                width: 282,38px;
-                img{
+                width: 282, 38px;
+                img {
                     width: 100%;
                     height: 100%;
                 }
@@ -155,20 +164,22 @@ header {
         }
     }
 }
+
 .menu-hamburger-active {
-        .line-one{
+    .line-one {
         position: absolute;
         transform: rotate(45deg);
-        }
-        .line-two {
-            position: absolute;
-            transform: rotate(45deg);
-        }
-        .line-three {
-            position: absolute;
-            transform: rotate(-45deg);
-        }
+    }
+    .line-two {
+        position: absolute;
+        transform: rotate(45deg);
+    }
+    .line-three {
+        position: absolute;
+        transform: rotate(-45deg);
+    }
 }
+
 .navbarScrolled {
     box-shadow: 0px 0px 15px 1px rgba(105, 56, 161, 0.897);
 }

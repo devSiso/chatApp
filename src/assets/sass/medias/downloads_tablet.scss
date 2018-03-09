@@ -1,0 +1,41 @@
+@media only screen and (min-width: 680px) and (max-width: 1124px) {
+    .download {
+        width: 100%;
+        height: 900px;
+        .download-box {
+            width: 95%;
+            align-items: center;
+            .iphoneDownloads {
+                width: 270px;
+                height: 485px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .download-avaible {
+                left: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                top: 60px;
+                width: 100%;
+                transform: translateX(-50%);
+                h1 {
+                    font-size: 34px;
+                    text-align: center;
+                }
+                p {
+                    font-size: 20px;
+                    min-width: 100%;
+                    text-align: center;
+                }
+                .badges {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 135px;
+                }
+            }
+        }
+    }
+}

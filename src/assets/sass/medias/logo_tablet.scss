@@ -1,0 +1,17 @@
+@media only screen and (min-width:680px) and (max-width: 1124px) {
+    .logo {
+        height: 320px;
+        ul {
+            flex-flow: row wrap;
+            width: 85%;
+            li {
+                width: 45%;
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

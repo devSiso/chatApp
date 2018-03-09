@@ -11,7 +11,7 @@ $(document).ready(function () {
         $('.menu').removeClass('navbar-active');
         $('.menu-hamburger').removeClass('menu-hamburger-active');
         $('html, body').animate({
-            scrollTop: $('.features').offset().top
+            scrollTop: $('.feature-wrapper').offset().top - 100
         }, 600);
     });
     $('#home').on('click', function () {
@@ -21,4 +21,19 @@ $(document).ready(function () {
             scrollTop: $('.homePage').offset().top
         }, 600);
     });
+    $('#howItWork').on('click', function () {
+        $('.menu').removeClass('navbar-active');
+        $('.menu-hamburger').removeClass('menu-hamburger-active');
+        $('html, body').animate({ 
+            scrollTop: $('.howItWork').offset().top - 50
+        }, 600);
+    });
+    $('#download').on('click', function () {
+        $('.menu').removeClass('navbar-active');
+        $('.menu-hamburger').removeClass('menu-hamburger-active');
+        $('html, body').animate({ 
+            scrollTop: $('.download').offset().top - 50
+        }, 600);
+    });
+
 });

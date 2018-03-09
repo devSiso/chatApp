@@ -1,0 +1,46 @@
+.download {
+    width: 100%;
+    height: 570px;
+    .download-box {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        position: relative;
+        .iphoneDownloads {
+            width: 270px;
+            height: 485px;
+            position: absolute;
+            bottom: 0;
+        }
+        .download-avaible {
+            position: absolute;
+            left: 450px;
+            top: 54%;
+            transform: translateY(-50%);
+            h1 {
+                font-family: 'Montserrat-Medium', sans-serif;
+                font-size: 36px;
+                margin-bottom: 20px;
+                color: #434343;
+            }
+            p {
+                font-family: 'Montserrat-light', sans-serif;
+                font-size: 24px;
+                margin-bottom: 40px;
+                line-height: 30px;
+                min-width: 441px;
+            }
+            .badges {
+                width: 370px;
+                display: flex;
+                justify-content: space-between;
+                a {
+                    text-decoration-line: none;
+                }
+            }
+        }
+    }
+}

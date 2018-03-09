@@ -1,0 +1,38 @@
+@media only screen and (min-width:680px) and (max-width: 1124px) {
+    .howItWork {
+        height: 1300px;
+        margin-top: 130px;
+        .howItWork_wrapper {
+            height: 1100px;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 100px;
+            .workList {
+                flex-flow: row wrap;
+                justify-content: space-around;
+                top: 0;
+                height: 400px;
+                width: 95%;
+                align-items: center;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                li {
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+            .iphonediv {
+                margin-top: -20px;
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

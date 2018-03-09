@@ -59,6 +59,14 @@ gulp.task('copyLibs', function () {
     return gulp.src('src/assets/libs/*.*')
         .pipe(gulp.dest('./dist/libs'));
 });
+gulp.task('autoprefixer', function () {
+    gulp.src('dist/styles/main.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('dist/styles/main.css'));
+});
 
 gulp.task('watch', function () {
     gulp.watch('src/assets/sass/**/*.scss', ['sass']);
