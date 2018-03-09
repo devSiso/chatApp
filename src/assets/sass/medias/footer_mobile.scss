@@ -1,0 +1,9 @@
+@media only screen and (max-width: 675px) {
+    footer {
+        .footer_lists {
+            .list_titles {
+                flex-flow: column wrap;
+            }
+        }
+    }
+}
