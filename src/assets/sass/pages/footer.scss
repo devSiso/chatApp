@@ -19,7 +19,7 @@ footer {
                 height: 125px;
             }
             li {
-                h1{
+                h1 {
                     font-family: 'Montserrat', sans-serif;
                     font-size: 20px;
                     color: #ffffff;
@@ -30,18 +30,37 @@ footer {
                     flex-direction: column;
                     justify-content: space-between;
                     height: 85%;
-                    li{
-                        a{
+                    li {
+                        a {
                             text-decoration-line: none;
                             color: #ffffff;
                             font-family: 'Montserrat-light', sans-serif;
                             font-size: 17px;
                         }
-                        p{
+                        p {
                             font-family: 'Montserrat-light', sans-serif;
                             color: #ffffff;
                             font-size: 17px;
                         }
+                    }
+                }
+            }
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            .swiper-wrapper {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .swiper-slide {
+                    li.company {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 185px;
                     }
                 }
             }

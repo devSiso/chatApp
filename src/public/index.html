@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <section class="homePage">
+        <section class="homePage" id="homePage">
             <nav id="navbar">
                 <div class="menu-hamburger">
                     <div class="line-one"></div>
@@ -20,18 +20,18 @@
                 </div>
                 <ul class="navbar">
                     <li class="nav-logo">
-                        <a href="#" id="home">ChatApp</a>
+                        <a href="#homePage" class="nav-itens" data-nav="#homePage">ChatApp</a>
                     </li>
                     <div class="menu">
                         <div class="nav-items">
                             <li>
-                                <a href="#" id="feature">Feature</a>
+                                <a href="#features" class="nav-itens" data-nav="#features">Feature</a>
                             </li>
                             <li>
-                                <a href="#" id="howItWork">How it Work</a>
+                                <a href="#howIt" class="nav-itens" data-nav="#howIt">How it Work</a>
                             </li>
                             <li>
-                                <a href="#" id="download">Download</a>
+                                <a href="#downloads" class="nav-itens" data-nav="#downloads"="">Download</a>
                             </li>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
             </div>
         </section>
     </header>
-    <section class="features">
+    <section class="features" id="features">
         <div class="feature-wrapper">
             <h1 class="feature_title">Feature</h1>
             <ul class="features_list">
@@ -93,7 +93,7 @@
             </ul>
         </div>
     </section>
-    <section class="howItWork">
+    <section class="howItWork" id="howIt">
         <h1 class="howItWork_title">How it Work</h1>
         <div class="howItWork_wrapper">
             <ul class="workList">
@@ -119,7 +119,18 @@
                 </li>
             </ul>
             <div class="iphonediv">
-                <img class="iphonevideo" src="img/iphone_video.png" alt="iphone_video">
+                <div class="iphonevideo">
+                    <a href="#" id="iconPlay">
+                    </a>
+                    <div class="video">
+                        <div class="xis">
+                            <div class="line-one"></div>
+                            <div class="line-two"></div>
+                        </div>
+                        <iframe id="youtube_player" class="yt_player_iframe" width="233" height="408" src="https://www.youtube.com/embed/PoSCUsNQVtw?enablejsapi=1&version=3&playerapiid=ytplayer"
+                            allowfullscreen="true" allowscriptaccess="always" frameborder="0"></iframe>
+                    </div>
+                </div>
                 <div>
                     <a href="#">
                         <img src="img/iconplay.png" alt="iconplay">
@@ -129,7 +140,7 @@
             </div>
         </div>
     </section>
-    <section class="download">
+    <section class="download" id="downloads">
         <div class="download-box">
             <img class="iphoneDownloads" src="img/iphone3.png" alt="iphone">
             <div class="download-avaible">
@@ -166,76 +177,92 @@
     <footer>
         <div class="footer_lists">
             <ul class="list_titles">
-                <li class="company">
-                    <h1>Company</h1>
-                    <ul class="companyList">
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Career</a>
-                        </li>
-                        <li>
-                            <a href="#">Term & Service</a>
-                        </li>
-                        <li>
-                            <a href="#">Our Community</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="support">
-                    <h1>Support</h1>
-                    <ul class="companyList">
-                        <li>
-                            <a href="#">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="socialmedia">
-                    <h1>Media Social</h1>
-                    <ul class="companyList">
-                        <li>
-                            <a href="#">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="#">Facebook</a>
-                        </li>
-                        <li>
-                            <a href="#">Google+</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="address">
-                    <h1>Address</h1>
-                    <ul class="companyList">
-                        <li>
-                            <p>
-                                132 Golden St, San Francisco,
-                                <br/> United States of America
-                            </p>
-                        </li>
-                    </ul>
-                </li>
-                <li class="chatApp">
-                    <h1>CHAT APP</h1>
-                    <ul class="companyList">
-                        <li>
-                            <p>
-                                Copyright chatapp © 2017
-                            </p>
-                        </li>
-                    </ul>
-                </li>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <li class="company">
+                                <h1>Company</h1>
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Career</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Term & Service</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Our Community</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="support">
+                                <h1>Support</h1>
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="socialmedia">
+                                <h1>Media Social</h1>
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="#">Twitter</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Facebook</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Google+</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="address">
+                                <h1>Address</h1>
+                                <ul class="companyList">
+                                    <li>
+                                        <p>
+                                            132 Golden St, San Francisco,
+                                            <br/> United States of America
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="chatApp">
+                                <h1>CHAT APP</h1>
+                                <ul class="companyList">
+                                    <li>
+                                        <p>
+                                            Copyright chatapp © 2017
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </ul>
         </div>
     </footer>
     <script src="libs/jquery.min.js"></script>
+    <script src="libs/swiper.min.js"></script>
     <script src="js/output.min.js"></script>
 </body>
 

@@ -58,6 +58,71 @@
             .iphonevideo {
                 width: 265px;
                 height: 535px;
+                background-image: url('../img/iphone_video.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+                transition: .2s;
+                a {
+                    background-image: url('../img/iconplaywhite.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    height: 56px;
+                    width: 56px;
+                    transition: .2s;
+                }
+                .video {
+                    width: 233px;
+                    height: 408px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    padding-bottom: 13px;
+                    padding-top: 7px;
+                    overflow: hidden;
+                    display: none;
+                    transition: .2s;
+                    .xis {
+                        width: 25px;
+                        height: 20px;
+                        position: absolute;
+                        top: 15px;
+                        right: 5px;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: row;
+                        align-items: center;
+                        z-index: 999;
+                        transition: .25s;
+                        background-color: black;
+                        &:hover {
+                            cursor: pointer;
+                            div {
+                                background-color: red;
+                            }
+                        }
+                        .line-one {
+                            height: 2px;
+                            width: 100%;
+                            position: absolute;
+                            transform: rotate(45deg);
+                            background-color: white;
+                        }
+                        .line-two {
+                            height: 2px;
+                            width: 100%;
+                            position: absolute;
+                            transform: rotate(-45deg);
+                            background-color: white;
+                        }
+                    }
+                }
             }
             div {
                 width: 100%;
@@ -85,4 +150,9 @@
             }
         }
     }
+}
+
+.video-active {
+    display: block !important;
+    transition: .2s;
 }

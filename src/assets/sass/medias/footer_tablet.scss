@@ -1,0 +1,53 @@
+@media only screen and (min-width: 680px) and (max-width: 1124px) {
+    body {
+        width: 100%;
+    }
+    footer {
+        .footer_lists {
+            width: 100%;
+            overflow: hidden;
+            .list_titles {
+                height: 65%;
+                padding-top: 75px;
+            }
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                .swiper-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    .swiper-slide {
+                        li {
+                            width: 210px;
+                        }
+                        text-align: center;
+                        flex-direction: row;
+                        text-align: center;
+                        position: relative;
+                        width: 100%;
+                        left: 15%;
+                        transform: translateX(-50%);
+                        /* Center slide text vertically */
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        li.company {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            height: 185px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
