@@ -10,8 +10,44 @@
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
+        min-width: 895px;
         li {
             margin-right: 20px;
+            strong {
+                display: none;
+            }
+        }
+        li.techCrunch {
+            background-image: url('../img/techcrunch.png');
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 75px;
+            background-size: 100px 75px;
+            background-position: center;
+        }
+        li.theVerge {
+            background-image: url('../img/the-verge.png');
+            background-repeat: no-repeat;
+            width: 250px;
+            height: 45px;
+            background-size: 250px 45px;
+            background-position: center;
+        }
+        li.tnw {
+            background-image: url('../img/tnw-the-next-web.png');
+            background-repeat: no-repeat;
+            width: 160px;
+            height: 70px;
+            background-size: 160px 70px;
+            background-position: center;
+        }
+        li.theGuardian {
+            background-image: url('../img/the-guardian.png');
+            background-repeat: no-repeat;
+            width: 270px;
+            height: 50px;
+            background-size: 270px 50px;
+            background-position: center;
         }
     }
 }
