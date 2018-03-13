@@ -4,12 +4,13 @@
         ul {
             flex-flow: row wrap;
             width: 80%;
+            min-width: 80%;
             li {
-                width: 35%;
+                width: 45%!important;
                 height: 25%;
                 display: flex;
                 justify-content: center;
-                img {
+                img {   
                     width: 75%;
                 }
             }
